@@ -1,0 +1,90 @@
+.app{
+    width: 50vw;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #8eb9be;
+  }
+  
+  .header{
+    color: #218838;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .input-container input{
+    width: 75%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .input-container button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .input-container button:hover {
+    background-color: #218838;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task {
+    color: black;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .task-completed{
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .task .editable{
+    border: 1px solid black;
+  }
+  
+  .task .update{
+    margin-right: 5px;
+    background-color: blue;
+  }
+  
+  .task #update:hover{
+    background-color: #1717a2;
+  }
+  
+  .task button{
+    text-decoration: none  !important;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task button:hover{
+    background-color: #a31a27;
+  }

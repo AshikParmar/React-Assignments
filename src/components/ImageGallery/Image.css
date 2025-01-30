@@ -38,6 +38,7 @@ body {
   
   .input-container input {
     flex: 1;
+    width: 75%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;

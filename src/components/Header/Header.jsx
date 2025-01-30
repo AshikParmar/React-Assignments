@@ -16,6 +16,14 @@ const Header = () => {
             </li>
             <li>
               <NavLink 
+                to="/todo" 
+                className={({ isActive }) => isActive ? 'active-link' : ''}
+              >
+                Todo
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
                 to="/gallery" 
                 className={({ isActive }) => isActive ? 'active-link' : ''}
               >
@@ -24,12 +32,21 @@ const Header = () => {
             </li>
             <li>
               <NavLink 
-                to="/about" 
+                to="/quote" 
                 className={({ isActive }) => isActive ? 'active-link' : ''}
               >
-                About
+                Quote
               </NavLink>
             </li>
+            <li>
+              <NavLink 
+                to="/temperature" 
+                className={({ isActive }) => isActive ? 'active-link' : ''}
+              >
+                Temperature
+              </NavLink>
+            </li>
+            
           </ul>
         </nav>
   )
