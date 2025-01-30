@@ -1,0 +1,82 @@
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Container */
+  .gallery-container {
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    justify-self: center;
+    text-align: center;
+  }
+  
+  h2{
+    color: #0056b3;
+  }
+
+  /* Input Section */
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-container button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .input-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Image Grid */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  
