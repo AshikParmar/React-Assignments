@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './image.css'
+import './Image.css'
 
 const ImageGallery = () => {
 
