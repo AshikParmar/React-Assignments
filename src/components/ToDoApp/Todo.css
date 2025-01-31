@@ -1,4 +1,5 @@
 .app{
+    margin: 80px;
     width: 50vw;
     padding: 20px;
     border-radius: 10px;
@@ -43,19 +44,39 @@
   .task-list {
     list-style: none;
     padding: 0;
+    width: 100%;
   }
   
   .task {
+    align-items: center;
     color: black;
     background-color: #fff;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, auto));
     cursor: pointer;
+    gap: 10px;
+  } 
+
+  .todo-text{
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
   }
+ 
+
+  .todo-text p{
+    margin: 0;
+    white-space: normal;
+
+  }
+
+  
+ .task .button{
+  display: flex;
+  margin-right: 5px;
+ }
   
   .task-completed{
     text-decoration: line-through;
@@ -71,7 +92,7 @@
     background-color: blue;
   }
   
-  .task #update:hover{
+  .task .update:hover{
     background-color: #1717a2;
   }
   
@@ -87,4 +108,19 @@
   
   .task button:hover{
     background-color: #a31a27;
+  }
+
+  @media (max-width:600px){
+    .app{
+      width: 300px;
+    }
+
+    .task {
+      gap: 5px;
+    }
+  
+    .button {
+      width: 100%;
+      justify-content: flex-start;
+    }
   }

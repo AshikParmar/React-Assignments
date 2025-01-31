@@ -35,3 +35,9 @@
 .navbar ul li a.active-link {
     color: rgba(253, 20, 20, 0.845); /* Highlight active link */
 }
+
+@media (max-width:550px) {
+    .navbar ul li{
+        padding: 8px;
+    }
+}

@@ -56,14 +56,21 @@ function Todo() {
         </div>
         <ul className='task-list'>
           {tasks.map((task, index) => (
-            <li key={index} className={task.completed ? 'task-completed task' : 'task'}>
-              <span contentEditable={task.editable ? true : false} 
+            
+              <li key={index} className={task.completed ? 'task-completed task' : 'task'}>
+             <div className='todo-text'> 
+              <p contentEditable={task.editable ? true : false} 
               className={task.editable ? "editable" : null}
-              onDoubleClick={()=> toggleTask(index)} >{task.text}</span>
-              <div>
+              onDoubleClick={()=> toggleTask(index)} >
+               {task.text}
+              </p>
+              </div>
+              <div className='button'>
                 <button className='update' onClick={() => toggleEditable(index)} >update</button>
                 <button onClick={() => deleteTask(index)} >Delete</button>
               </div>
+            
+         
 
 
             </li>
