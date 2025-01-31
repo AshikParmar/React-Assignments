@@ -12,12 +12,12 @@ import Home from './components/Home/Home.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<App />} >
-      <Route path='' element={<Home />}/>
+    <Route path='' element={<App />} >
+      <Route path='/' element={<Home />}/>
       <Route path='/gallery' element={<ImageGallery/>}/>
-      <Route path='quote' element={<Quote/>}/>
-      <Route path='temperature' element={<Temp/>}/>
-      <Route path='todo' element={<Todo/>}/>
+      <Route path='/quote' element={<Quote/>}/>
+      <Route path='/temperature' element={<Temp/>}/>
+      <Route path='/todo' element={<Todo/>}/>
     </Route>
   )
 )
